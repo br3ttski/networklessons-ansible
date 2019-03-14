@@ -1,6 +1,6 @@
 # network-automation-orchestration
 
-Contains project files for the network automation and orchestration lesson.
+Contains project files for the network automation, orchestration, and SDN lessons.
 
 ## Ansible
 
@@ -34,3 +34,14 @@ There are two playbooks in the playbooks folder:
 * **configure_ntp_dns.yml**: makes a backup of the running-configuration and configures NTP and DNS servers on all four switches.
 
 The hosts file and playbooks can be used on the Cisco VIRL topology in the virl folder.
+
+## Kubernetes
+
+Sample deployment file.
+
+## gRPC
+
+There are two files to test gRPC on a Cisco XE 9000V router:
+
+* grpc-cisco-get-config.py: retrieves configuration data for the YANG module "Cisco-IOS-XR-ipv4-arp-cfg" and container "arpgmp". Returns data in JSON format.
+* grpc-cisco-replace-config.py: replaces configuration data. This example adds an ARP entry to the router. The modeled data is in JSON format.
